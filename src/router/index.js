@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Index from '../views/Index.vue'
+import Tag from '../views/Tag.vue'
+import Login from '../views/Login.vue'
 
 Vue.use(VueRouter)
 
@@ -14,6 +16,16 @@ const routes = [
     path: '/index',
     name: '首页',
     component: Index 
+  },
+  {
+    path: '/tag',
+    name: '标签',
+    component: Tag 
+  },
+  {
+    path: '/login',
+    name: '登录',
+    component: Login 
   },
   {
     path: '/about',

@@ -20,7 +20,7 @@
 ></v-skeleton-loader>
 
   <v-container class="lighten-5 mb-6" >
-      <v-row :align="align" no-gutters style="padding-top: 10px;" >
+      <v-row  no-gutters style="padding-top: 10px;" >
         <v-col>
           <v-card class="mx-auto" max-width="800" >
          
@@ -33,7 +33,7 @@
                 text-color="white"
               >
                 <v-icon left>mdi-label</v-icon>
-                GOLang
+                GOLang 
               </v-chip>
             </v-card-text>
             <v-card-text class="text--primary">
@@ -41,14 +41,12 @@
               <div>Whitsunday Island, Whitsunday Islands</div>
             </v-card-text>
             <v-card-actions>
-              <v-btn color="orange" text >
-                More
-              </v-btn>
+              <v-btn class="ma-2" outlined color="indigo">More</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
       </v-row>
-      <v-row :align="align" no-gutters style="padding-top: 10px;" >
+      <v-row no-gutters style="padding-top: 10px;" >
         <v-col>
           <v-card class="mx-auto" max-width="800">
             <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" >
@@ -60,14 +58,12 @@
               <div>Whitsunday Island, Whitsunday Islands</div>
             </v-card-text>
             <v-card-actions>
-              <v-btn color="orange" text >
-                More
-              </v-btn>
+              <v-btn class="ma-2" outlined color="indigo">More</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
       </v-row>
-      <v-row :align="align" no-gutters style="padding-top: 10px;">
+      <v-row no-gutters style="padding-top: 10px;">
         <v-col>
           <v-card class="mx-auto" max-width="800" >
             <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" >
@@ -79,14 +75,12 @@
               <div>Whitsunday Island, Whitsunday Islands</div>
             </v-card-text>
             <v-card-actions>
-              <v-btn color="orange" text >
-                More
-              </v-btn>
+              <v-btn class="ma-2" outlined color="indigo">More</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
       </v-row>
-      <v-row :align="align" no-gutters style="padding-top: 10px;">
+      <v-row no-gutters style="padding-top: 10px;">
         <v-col>
           <v-card class="mx-auto" max-width="800" >
             <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" >
@@ -98,9 +92,7 @@
               <div>Whitsunday Island, Whitsunday Islands</div>
             </v-card-text>
             <v-card-actions>
-              <v-btn color="orange" text >
-                More
-              </v-btn>
+              <v-btn class="ma-2" outlined color="indigo">More</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>

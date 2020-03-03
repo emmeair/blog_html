@@ -81,7 +81,7 @@
       </v-row>
     </v-app-bar>
     <v-content>
-      <v-slide-y-transition hide-on-leave="false">
+      <v-slide-y-transition hide-on-leave>
         <router-view/>
       </v-slide-y-transition>
     </v-content>
@@ -100,9 +100,9 @@ export default {
     drawer: null,
     items: [
       { icon: 'fa fa-bandcamp', text: '首页' ,to:"index"},
-      { icon: 'fa fa-subscriptions', text: 'Subscriptions' ,to:"about"},
+      { icon: 'fa fa-tag', text: '标签' ,to:"tag"},
       { icon: 'fa fa-history', text: 'History'  ,to:"about"},
-      { icon: 'fa fa-featured_play_list', text: 'Playlists' ,to:"about"},
+      { icon: 'fa fa-login', text: '登录' ,to:"login"},
       { icon: 'fa fa-watch_later', text: 'Watch Later' ,to:"about"},
     ],
     items2: [
