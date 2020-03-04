@@ -101,7 +101,7 @@ export default {
     items: [
       { icon: 'fa fa-bandcamp', text: '首页' ,to:"index"},
       { icon: 'fa fa-tag', text: '标签' ,to:"tag"},
-      { icon: 'fa fa-history', text: 'History'  ,to:"about"},
+      { icon: 'fa fa-history', text: '发布'  ,to:"issued"},
       { icon: 'fa fa-login', text: '登录' ,to:"login"},
       { icon: 'fa fa-watch_later', text: 'Watch Later' ,to:"about"},
     ],

@@ -47,7 +47,7 @@
             justify="center"
           >
             <v-col class="text-center">
-              <p class="headline display-2">登录</p>
+              <p class="headline display-2">注册</p>
               <span class="grey--text text--lighten-1">Please Login or register</span>
             </v-col>
           </v-row>
@@ -65,7 +65,7 @@
                 :disabled="isUpdating"
                 filled
                 color="blue-grey lighten-2"
-                label="邮箱"
+                label="昵称"
               ></v-text-field>
             </v-col>
             <v-col
@@ -77,20 +77,38 @@
                 :disabled="isUpdating"
                 filled
                 color="blue-grey lighten-2"
+                label="邮箱"
+              ></v-text-field>
+            </v-col>
+             <v-col
+              cols="12"
+              md="6"
+            >
+              <v-text-field
+                v-model="password"
+                :disabled="isUpdating"
+                filled
+                color="blue-grey lighten-2"
                 label="密码"
               ></v-text-field>
             </v-col>
-
+             <v-col
+              cols="12"
+              md="6"
+            >
+              <v-text-field
+                v-model="password"
+                :disabled="isUpdating"
+                filled
+                color="blue-grey lighten-2"
+                label="确认密码"
+              ></v-text-field>
+            </v-col>
           </v-row> 
         </v-container>
       </v-form>
       <v-divider></v-divider>
       <v-card-actions>
-        <v-btn color="blue-grey darken-3" depressed @click="redirectToRsg">
-        <v-icon left>mdi-update</v-icon>
-        立即注册
-        </v-btn>
-
         <v-btn
           :disabled="autoUpdate"
           :loading="isUpdating"
@@ -99,7 +117,7 @@
           @click="isUpdating = true"
         >
           <v-icon left>mdi-update</v-icon>
-          立即登录
+          立即注册
         </v-btn>
       </v-card-actions>
     </v-card>
@@ -142,10 +160,6 @@
         const index = this.friends.indexOf(item.name)
         if (index >= 0) this.friends.splice(index, 1)
       },
-      redirectToRsg(event){
-
-        this.$router.push("register")
-      }
     },
   }
 </script>

@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Index from '../views/Index.vue'
 import Tag from '../views/Tag.vue'
 import Login from '../views/Login.vue'
+import Register from '../views/Register.vue'
+import Issued from '../views/Issued.vue'
 
 Vue.use(VueRouter)
 
@@ -26,6 +28,16 @@ const routes = [
     path: '/login',
     name: '登录',
     component: Login 
+  },
+  {
+    path: '/register',
+    name: '注册',
+    component: Register 
+  },
+  {
+    path: '/issued',
+    name: '发布',
+    component: Issued 
   },
   {
     path: '/about',
