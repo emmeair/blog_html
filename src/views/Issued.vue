@@ -1,7 +1,20 @@
 <template>
   <div id="issues">
+ 
+      <v-alert
+      prominent
+      type="error"
+      style="margin-top:10px"
+    >
+      <v-row align="center">
+        <v-col class="grow">您应知晓您发布的内容是否符合法律规定</v-col>
+        <v-col class="shrink">
+          <v-btn>必须滴</v-btn>
+        </v-col>
+      </v-row>
+    </v-alert>
       <template>
-        <v-card :loading="isUpdating">
+        <v-card :loading="isUpdating" >
         <v-container fluid>
           <h1>发布文章</h1>
           <v-divider></v-divider>
